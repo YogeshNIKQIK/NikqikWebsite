@@ -1,0 +1,101 @@
+.insights-section {
+  background: linear-gradient(90deg, rgb(15, 0, 48) 0%, rgb(82, 24, 212) 100%);
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 0px;
+}
+
+.insights {
+  padding-top: 40px;
+}
+
+.insights h1 {
+  color: #FFF;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 63px;
+  margin-left: 0px;
+}
+@media (max-width: 640px) {
+  .insights h1 {
+    font-size: 36px;
+  }
+}
+.services-area {
+  .wall-off-love {
+      column-count: 3;
+      column-gap: 30px;
+  }
+  .why-immersive-heading {
+      img {
+          width: 160px;
+          padding-top: 60px;
+          margin-bottom: 60px;
+      }
+      h2 {
+          font-size: 34px;
+          span {
+              font-size: 120px;
+              font-weight: 700;
+          }
+      }
+  }
+  .single-item {
+      margin-bottom: 30px;
+      display: inline-block;
+      .item {
+          padding: 70px 30px 30px 30px;
+          background: #ffffff;
+          box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
+          position: relative;
+          // z-index: 1;
+          background-repeat: no-repeat;
+          background-size: 150px;
+          background-position: left bottom;
+          .quote {
+              position: absolute;
+              top: 0;
+              left: 15px;
+              font-size: 50px;
+              color: #353b4b;
+          }
+          p {
+              font-size: 16px;
+              margin-bottom: 5px;
+          }
+          .client-name {
+              margin-bottom: 0px;
+              color: #7d7d7d;
+          }
+          .info {
+              ul {
+                  li {
+                      display: inline-block;
+                      padding-right: 5px;
+                      color: #ff9900;
+                  }
+              }
+          }
+      }
+  }
+
+}
+.mt-120{
+  margin-top:120px!important;
+}
+
+@media only screen and (max-width: 767px) {
+  .services-area  .wall-off-love  {
+      column-count: 1;
+      column-gap: 0;
+  }
+}

@@ -1,0 +1,396 @@
+<section id="hero" class="hero hero-section">
+  <div class="container position-relative wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+    <div class="row gy-5 ">
+      <div class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+        <h1>We are Nikqik,<br> Partner in your<br>
+          <span>Digital Transformation Journey!</span>
+        </h1>
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <a href="contact-us" class="btn-get-started">Get Started <i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-lg-4 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start pt-5">
+        <h3>Our Achievements</h3>
+        <div class=" justify-content-center justify-content-lg-start">
+          <img class="img-fluid" src="assets/images/badge1.png" alt="">
+          <img class="img-fluid" src="assets/images/badge4.png" alt="">
+          <img class="img-fluid" src="assets/images/badge3.png" alt="">
+          <img class="img-fluid" src="assets/images/badge2.png" alt="">
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<section id="constant-enterprise" class="constant-enterprise section-bg custom-padding">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 wow fadeInUp" data-wow-duration="2s">
+        <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4 pt-5 home-top-ped">
+          <h3 data-aos="fade-in" data-aos-delay="100">Welcome to Nikqik,<br> Where Innovation Drives Tomorrow </h3>
+          <p data-aos="fade-in" class="pb-4">
+            At Nikqik, innovation is woven into our DNA. We are dedicated to providing pioneering IT solutions that redefine industry standards by focusing on People, Process, and Technology. Our team of visionary experts is committed to crafting bespoke IT Services designed to bring efficiency, optimize costs, and reduce risk.
+          </p>
+          <p data-aos="fade-in" class="pb-4">
+            Explore our comprehensive range of IT Services, from cutting-edge software development to robust cybersecurity measures. We specialize in seamlessly integrating advanced technologies to meet the unique needs of your business, ensuring optimal performance and security.
+          </p>
+          <p data-aos="fade-in" class="pb-4">
+            Our approach prioritizes your success by enhancing processes and empowering people, creating a synergy that drives exceptional results. Join us in driving success through collaboration and innovation.
+          </p>
+          <p data-aos="fade-in">
+            Welcome to Nikqik Technologies, where we shape the future of IT Services with our relentless pursuit of excellence.
+          </p>
+          <div class="d-flex justify-content-center justify-content-lg-start pt-5 pb-4 home-contact-btn">
+            <a href="contact-us" class="btn-get-started">Connect With Us <i class="fa fa-angle-right"></i></a>
+          </div>
+          <!-- <div class="d-flex review-bg justify-content-center justify-content-lg-start">
+            <span class="mr-2">5 <img src="assets/images/star-svgrepo-com (1) 1.png" alt=""></span>
+            <span class="ml-1">Rated 4.80 out of 5 based on over 1000+ reviews</span>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-lg-6  d-flex top-left-img  image wow fadeInUp" data-wow-duration="2s">
+        <div class="row align-self-center gy-4">
+          <img class="img-fluid" src="assets/images/home-image.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seervices-section section-bg custom-padding pt-4 pb-4  ">
+  <div class="container">
+    <div class="row wow fadeInUp" data-wow-duration="2s">
+      <div class="col-lg-9 text-center mx-auto">
+        <div class="content d-flex flex-column justify-content-center">
+          <!-- <span>Services</span> -->
+          <h3 data-aos="fade-in" data-aos-delay="100">Service Offerings</h3>
+        </div>
+        <div class="row align-self-center gy-4">
+          <p>We offer a variety of innovative and comprehensive IT solutions. We deliver quality services in the most efficient way, and our experts will work collaboratively with you to customize our offerings to your particular needs.</p>
+          <div class="d-flex justify-content-center justify-content-lg-center mt-0">
+            <a href="services" class="btn-get-started">View All Services <i class="fa fa-angle-right"></i></a>
+          </div>
+       </div>
+      </div>
+
+      <!-- <div class="col-lg-6 mt-lg-0 d-flex">
+        <div class="row align-self-center gy-4">
+           <p>Step into our world of ingenuity and discover a spectrum of IT services meticulously designed to propel your business forward. From cutting-edge software development to robust cybersecurity measures, our offerings are a testament to our relentless pursuit of excellence.</p>
+
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="services-offerings p-0">
+  <div class="container-fluid border-bottom mt-0">
+    <div class="row gy-5 wow fadeInUp" data-wow-duration="2s">
+      <div class="col-lg-12 mt-0">
+        <div class="container">
+          <ngx-slick-carousel class="carousel imageSlider mb-0"
+            #slickModal="slick-carousel"
+            [config]="slideConfig"
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <div class="card">
+                <div class="card-body">
+                  <div class="img-wrapper">
+                    <img src="{{ slide.img }}" alt="" width="100%">
+                  </div>
+                  <div class="caption">
+                    <h5>{{ slide.title }}</h5>
+                    <p>{{ slide.description }}</p>
+                    <a href="{{ slide.link }}"> Read More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                      <path d="M6.66641 7.73274L5.02475 9.37443L2.34975 12.0494C1.78307 12.6078 0.816406 12.2078 0.816406 11.4078V6.21608V1.54108C0.816406 0.741076 1.78307 0.341077 2.34975 0.907743L6.66641 5.22441C7.35808 5.90774 7.35808 7.04108 6.66641 7.73274Z" fill="white"/>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ngx-slick-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="our-enterprise" class="our-enterprise section-bg custom-padding mt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-xl-6 wow fadeInUp" data-wow-duration="2s">
+        <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
+          <!-- <span>List of technologies</span> -->
+          <h3 data-aos="fade-in" data-aos-delay="100">Our Expertise</h3>
+          <p data-aos="fade-in" class="pb-4">
+            We bridge the gap between potential and progress. Nikqik's domain mastery and innovative solutions empower you to unleash productivity, optimize operations, and pioneer transformative change.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-lg-0 d-flex">
+        <div class="row align-self-center gy-4">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="servicely-technology-solutions">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/servicely-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="freshworks-technology-solutions">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/freshworks-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="microsoft-technology-solutions">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/microsoft-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="servicenow-technology-partner">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/servicenow-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="salesforce-technology-services">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/salesforce-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="uipath-technology-solutions">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/UiPath-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="aws-technology-services">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/amazon-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
+            <a href="python-technology-solutions">
+            <div class="feature-box d-flex align-items-center">
+              <img class="img-fluid" src="assets/images/logo/python-logo.png" alt="">
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section id="why-choose" class="why-choose custom-padding">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title wow fadeInUp" data-wow-duration="2s">
+      <span>Why Choose Us</span>
+      <h2>See how we help the world work better</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br> the
+        industry's standard dummy text ever since the 1500s, when an unknown.</p>
+    </div>
+    <div class="row gy-4 wow fadeInUp" data-wow-duration="2s">
+      <div class="col-lg-4 col-md-6">
+        <div class="why-choose-box">
+          <img class="img-fluid" src="assets/images/icon/explore-svgrepo-com 1.png" alt="">
+          <div>
+            <span>Explore Products and solutions</span>
+            <p class="pt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's.</p>
+              <div class="read-btn">
+                <a href="#">Read more ></a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="why-choose-box">
+          <img class="img-fluid" src="assets/images/icon/career-ladder-stairs-promotion-career-advance-svgrepo-com 1.png" alt="">
+          <div>
+            <span>Elevate your <br>
+              career</span>
+            <p class="pt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's.</p>
+              <div class="read-btn">
+                <a href="#">Read more ></a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="why-choose-box">
+          <img class="img-fluid" src="assets/images/icon/partners-in-business-svgrepo-com 1.png" alt="">
+          <div>
+            <span>Find the perfect<br>
+              partner</span>
+            <p class="pt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's.</p>
+              <div class="read-btn">
+                <a href="#">Read more ></a>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="connect-box" class="connect-box custom-padding pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="connect-boxwrep wow fadeInUp" data-wow-duration="2s">
+        <h2>Vision to reality - Nikqik can help you to fast-track <br> your sustainable Digital Transformation journey</h2>   
+      </div>
+      <div class="d-flex justify-content-center btn-padding">
+        <a href="contact-us" class="btn-get-started">Connect With Us <i class="fa fa-angle-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- <section id="client-section" class="client-section custom-padding">
+  <div class="container">
+    <div class="row wow fadeInUp" data-wow-duration="2s">
+      <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-center client-hed ">
+        <div class="client-title">
+
+          <h2 class="text-blue">What Our Clients Say </h2>
+        </div>
+        <p class="pt-4 ">Nikqik Technologies is a chosen technology partner for its esteemed clients. Staying high on its values, taking pride in delivering standard and qualitative services to its clients, Nikqik is a pioneering leader in the industry.</p>
+      </div>
+    </div>
+
+    <div class="row gy-4 client client-pad pt-3 mt-1 wow fadeInUp" data-wow-duration="2s">
+
+      <div class="col-xl-8 mt-0 mx-auto">
+        <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
+
+        </div>
+        <ngx-slick-carousel class="carousel imageSlider review-slider1 mb-0 career-slider" #slickModal="slick-carousel" [config]="slideConfig1"
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem class="slide content-review">
+          <a href="reviews" class="text-black">
+        <div class="content-review d-flex align-items-center ps-0 pt-4 ps-xl-4">
+
+          <img class="img-fluid" src="assets/images/08 1.png" alt="">
+          <div class="ml-5 review-slider">
+            <h5>Fred Chener</h5>
+            <p class="mb-0">Business Owner, Sydney, Austraila</p>
+          </div>
+
+        </div>
+      </a>
+        </div>
+        <div ngxSlickItem class="slide slide-1">
+          <a href="reviews" class="text-black">
+          <div class="content-review d-flex align-items-center ps-0 pt-4 ps-xl-4">
+
+            <img class="img-fluid" src="assets/images/08 1.png" alt="">
+            <div class="ml-5 review-slider">
+              <h5>Fred Chener</h5>
+              <p class="mb-0">Business Owner, Sydney, Austraila</p>
+            </div>
+
+          </div>
+        </a>
+          </div>
+          <div ngxSlickItem class="slide slide-1">
+            <a href="reviews" class="text-black">
+            <div class="content-review d-flex align-items-center ps-0 pt-4 ps-xl-4">
+
+              <img class="img-fluid" src="assets/images/08 1.png" alt="">
+              <div class="ml-5 review-slider">
+                <h5>Fred Chener</h5>
+                <p class="mb-0">Business Owner, Sydney, Austraila</p>
+              </div>
+
+            </div>
+          </a>
+            </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="contact" class="contact-section section-bg custom-padding">
+  <div class="container">
+    <div class="row gy-4 wow fadeInUp" data-wow-duration="2s">
+      <div class="col-lg-6 contect-padding">
+      <!-- <span>CONTACT NOW</span> -->
+      <h3>Have a question write a message</h3>
+          <form [formGroup]="enqueryForm" (ngSubmit)="onSubmit()" id="contact_form" class="pt-2">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6 mb-3">
+                <input type="text" formControlName="fullname" [ngClass]="{'is-invalid':submitted && enqueryForm.controls['fullname'].errors && submitted}" class="form-input form-control w-100" aria-invalid="false" placeholder="*Full Name">
+                <div *ngIf="submitted && enqueryForm.controls['fullname'].errors" class="text-danger">
+                  <div *ngIf="submitted && enqueryForm.controls['fullname'].errors?.['required'] && submitted">Name is required</div>
+                  <div *ngIf="submitted && enqueryForm.controls['fullname'].errors?.['pattern'] " >Numbers are not allowed.</div>
+                </div>
+
+              </div>
+              <div class="col-lg-6 col-sm-6 mb-3">
+                <input type="email" formControlName="email" [ngClass]="{'is-invalid':submitted && enqueryForm.controls['email'].errors && submitted}" class="form-input form-control w-100" aria-invalid="false" placeholder="*Email Address">
+                <div *ngIf="submitted && enqueryForm.controls['email'].errors" class="text-danger">
+                  <div *ngIf="submitted && enqueryForm.controls['email'].errors?.['required'] && submitted">Email address is required</div>
+                  <div *ngIf="submitted && enqueryForm.controls['email'].errors?.['pattern'] " >Please enter valid email</div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6 mb-3">
+                <input type="text" formControlName="phone" [ngClass]="{'is-invalid':submitted && enqueryForm.controls['phone'].errors && submitted}" class="form-input form-control w-100"  placeholder="*Contact Number">
+                <div *ngIf="submitted && enqueryForm.controls['phone'].errors" class="text-danger">
+                  <div *ngIf="submitted && enqueryForm.controls['phone'].errors?.['required'] && submitted">Phone number is required</div>
+                  <div *ngIf="submitted && enqueryForm.controls['phone'].errors?.['pattern'] " >Please enter 10 digit number</div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-sm-6 mb-3">
+                <input type="text" formControlName="subject" [ngClass]="{'is-invalid':submitted && enqueryForm.controls['subject'].errors && submitted}" class="form-input form-control w-100" placeholder="*Subject">
+                <div *ngIf="submitted && enqueryForm.controls['subject'].errors" class="text-danger">
+                  <div *ngIf="submitted && enqueryForm.controls['subject'].errors?.['required'] && submitted">Subject is required</div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mb-3">
+                <textarea class="form-input form-control w-100" formControlName="message" aria-invalid="false"  placeholder="Message"></textarea>
+
+                </div>
+                </div>
+            <div class="col-lg-12 btn-submit">
+              <button class="btn-grad" type="submit" name="submit">Submit Request  <i class="fa fa-angle-right"></i></button>
+            </div>
+
+          </form>
+
+        </div>
+      <div class="col-lg-6 mt-lg-0 d-flex contect-padding ">
+        <div class="row align-self-center gy-4 home-image-none">
+          <img class="img-fluid" src="/assets/images/hellopic 1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

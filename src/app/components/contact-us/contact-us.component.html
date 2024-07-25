@@ -1,0 +1,176 @@
+
+
+<section class="insights contact-section">
+  <div class="container position-relative wow fadeInUp" data-wow-duration="2s">
+    <div class="row gy-5 ">
+      <div
+        class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start insights">
+        <h1>Contact Us</h1>
+        <h2>Share Your Project Details </h2>
+        <p class="pt-2">We value your feedback, inquiries, and the opportunity to connect with you. Whether you have a
+          question about our products, services, or just want to say hello, we'd love to hear from you.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class=" section-bg custom-padding">
+  <div class="container">
+    <div class="row wow fadeInUp mxauto" data-wow-duration="2s">
+
+      <div class="col-lg-6 contect-padding">
+        <div class="col-lg-12">
+          <div class="conect-title wow fadeInUp " data-wow-duration="2s">
+            <h2>Connect With Us</h2>
+          </div>
+        </div>
+        <div>
+
+          <div class="block-23 mb-3 pt-4">
+            <div class="d-flex ps-0">
+              <!-- <img class="img-fluid" src="assets/images/mail.png" alt=""> -->
+              <div class="ml-3 got-number">
+                <h5 class="mb-0"><i class="fa fa-phone"></i><span class="pl-3">Got questions? Let’s Talk</span></h5>
+                <!-- <p class="pt-2 mb-0"><span class="country">USA: </span><a href="tel:+1 (628) 800-6761">+1 (628) 800-6761</a></p> -->
+                <p class="pt-2 mb-0"><span class="country">AUS: </span><a href="tel:(02) 7202 5765">(02) 7202 5765</a></p>
+
+              </div>
+            </div>
+            <div class="d-flex ps-0 pt-3 img-icon">
+              <!-- <img class="img-fluid" src="assets/images/phone-rounded-svgrepo-com 1.png" alt=""> -->
+              <div class="ml-3 got-number">
+                <h5 class="mb-0"><i class="fa fa-envelope"></i><span class="pl-3"> Need help? Email us</span></h5>
+                <p class="pt-2 mb-0"><a href="mailto:info@nikqik.com">info&#64;nikqik.com</a></p>
+              </div>
+            </div>
+            <div class="d-flex ps-0 pt-3 img-icon">
+              <!-- <img class="img-fluid" src="assets/images/phone-rounded-svgrepo-com 1.png" alt=""> -->
+              <div class="ml-3 got-number">
+                <h5 class="mb-0"><i class="fa fa-map-marker"></i><span class="pl-3"> Location</span></h5>
+                <p class="pt-2 mb-0"><a href="https://www.google.com/search?sca_esv=ba8d56c099ffe98e&rlz=1CDGOYI_enAU1022AU1022&hl=en-GB&sxsrf=ADLYWIKqpEPJ-WML6M_cW-qHYlBOlgeicw%3A1718280187606&q=Regus%20-%20Sydney%2C%20680%20George%20Street&ludocid=17131029525253129995&ibp=gwp%3B0%2C7&lsig=AB86z5XIDrv1RJkoZvquAIEpTDXh&kgs=53d04ec5d7ea29da&shndl=-1&shem=lrnolc%2Clsde%2Clsp%2Cssim&source=sh%2Fx%2Floc%2Fact%2Fm1%2F3">Level 45, 680 George Street, World Square, Sydney, 2000 <span>(Headquarter)</span></a></p>
+              </div>
+            </div>
+            <div class="d-flex ps-0 pt-3 img-icon">
+              <div class="ml-3 got-number">
+                <h5 class="mb-0"><i class="fa fa-map-marker"></i><span class="pl-3"> Location</span></h5>
+                <p class="pt-2 mb-0"><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3962e2b4c68b866f:0xf66c107c3937811a?source=g.page.share">604, Atulya IT Park Next to Crystal IT Park, Bhawarkua Main Rd, Khandwa Naka, Indore, Madhya Pradesh 452014</a></p>
+              </div>
+            </div>
+            <!-- <div class="d-flex ps-0 pt-3 img-icon">
+              <div class="ml-3 got-number">
+                <h5 class="mb-0"><i class="fa fa-map-marker"></i><span class="pl-3"> Location</span></h5>
+                <p class="pt-2 mb-0"><a href="javascript:void(0)"> </a></p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6 contect-padding">
+        <div class="col-lg-12">
+          <div class="conect-title wow fadeInUp " data-wow-duration="2s">
+            <h2>Have A Project In Mind?</h2>
+          </div>
+        </div>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contact_form" action="" class="pt-2">
+          <div class="row">
+            <div class="col-lg-12">
+              <label for="fname"></label>
+              <input type="text" formControlName="fname"
+                [ngClass]="{'is-invalid':submitted && contactForm.controls['fname'].errors && submitted}"
+                class="form-input form-control w-100" aria-invalid="false" placeholder="Full Name*">
+              <div *ngIf="submitted && contactForm.controls['fname'].errors" class="text-danger">
+                <div *ngIf="submitted && contactForm.controls['fname'].errors?.['required'] && submitted">Full name is
+                  required</div>
+                <div *ngIf="submitted && contactForm.controls['fname'].errors?.['pattern']">Numbers are not allowed.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-lg-12">
+              <label for="email"></label>
+              <input type="text" formControlName="email"
+                [ngClass]="{'is-invalid':submitted && contactForm.controls['email'].errors && submitted}"
+                class="form-input form-control w-100" aria-invalid="false" placeholder="Email*">
+              <div *ngIf="submitted && contactForm.controls['email'].errors" class="text-danger">
+                <div *ngIf="submitted && contactForm.controls['email'].errors?.['required'] && submitted">Email address
+                  is required</div>
+                <div *ngIf="submitted && contactForm.controls['email'].errors?.['pattern'] ">Please enter valid email
+                  address</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <label for="company"></label>
+              <input type="text" formControlName="company"
+                [ngClass]="{'is-invalid':submitted && contactForm.controls['company'].errors && submitted}"
+                class="form-input form-control w-100" aria-invalid="false" placeholder="Company*">
+              <div *ngIf="submitted && contactForm.controls['company'].errors" class="text-danger">
+                <div *ngIf="submitted && contactForm.controls['company'].errors?.['required'] && submitted">Company name
+                  is required</div>
+                <div *ngIf="submitted && contactForm.controls['company'].errors?.['pattern'] ">Numbers are not allowed.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <label for="phone"></label>
+              <input type="text" formControlName="phone"
+                [ngClass]="{'is-invalid':submitted && contactForm.controls['phone'].errors && submitted}"
+                class="form-input form-control w-100" aria-invalid="false" placeholder=" Phone Number*">
+              <div *ngIf="submitted && contactForm.controls['phone'].errors" class="text-danger">
+                <div *ngIf="submitted && contactForm.controls['phone'].errors?.['required'] && submitted">Phone number is required</div>
+                <div *ngIf="submitted && contactForm.controls['phone'].errors?.['pattern'] " >Please enter 10 digit number</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <label for="message"></label>
+              <textarea class="form-input form-control w-100" aria-invalid="false" formControlName="message"
+                placeholder="Message"></textarea>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 d-flex pd-left checkbox-a">
+              <input type="checkbox">
+              <label>Yes, I am OK to receive further communication over my details shared here.
+                <!-- Refer <a href="/">Privacy Policy</a> for
+                more info. -->
+              </label>
+
+
+            </div>
+          </div>
+
+          <div class="col-lg-12 btn-submit">
+            <button class="btn-grad" type="submit" name="submit">Submit <i
+                class="fa fa-angle-right"></i></button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="connect-box" class="connect-box custom-padding pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="connect-boxwrep wow fadeInUp" data-wow-duration="2s">
+        <h2>Let's explore how we can <br> create WOW for you!</h2>
+        <p>Connect with us to know more about how we can create value for your organisation</p>
+      </div>
+      <!-- <div class="d-flex justify-content-center btn-padding">
+        <a href="careers" class="btn-get-started">Explore Opening &nbsp; <i class="fa fa-angle-right"></i></a>
+      </div> -->
+    </div>
+  </div>
+</section>
+

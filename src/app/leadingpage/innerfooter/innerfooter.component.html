@@ -1,0 +1,89 @@
+<footer class="footer-01 pt-5" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/header-logo.png" alt="" class="img-fluid"></a>
+        </div>
+        <!-- <p class="pt-3">Believing in the power of human ingenuity, streamlined processes, and responsible technology, leading to a sustainable future.</p> -->
+        <p class="pt-3">Building the future today!</p>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <h2 class="footer-heading">Contact Us</h2>
+        <div class="block-23 mb-3">
+          <div class="d-flex ps-0">
+            <img class="img-fluid" src="assets/images/mail.png" alt="">
+            <div class="ml-3 review-slider">
+              <h5 class="mb-0">Email</h5>
+              <p class="mb-0"><a href="mailto:info@nikqik.com">info&#64;nikqik.com</a></p>
+            </div>
+          </div>
+          <div class="d-flex ps-0 pt-3 img-icon">
+            <img class="img-fluid" src="assets/images/phone-rounded-svgrepo-com 1.png" alt="">
+            <div class="ml-3 review-slider">
+              <h5 class="mb-0">Phone</h5>
+              <p class="mb-0"><a href="tel:+1 (628) 800-6761">+1 (628) 800-6761</a></p>
+            </div>
+          </div>
+          <div class="d-flex ps-0  pt-3 img-icon-1">
+            <img class="img-fluid" src="assets/images/Frame 9.png" alt="">
+            <div class="ml-3 review-slider">
+              <h5 class="mb-0">Address</h5>
+              <p class="mb-0">Level 35, One International Towers,
+                100 Barangaroo Avenue,
+                Sydney NSW 2000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0 info_section">
+        <h2 class="footer-heading">Services</h2>
+        <div class="d-flex block-23">
+          <ul>
+            <li><a href="it-service-management-process-consulting">IT Service Management Process Consulting</a></li>
+            <li><a href="it-service-management-tools-implementation">IT Service Management Tools Implementation</a></li>
+            <li><a href="cloud-contact-center-professional-services">Cloud Contact Center Professional Services</a></li>
+            <li><a href="quality-assuarance">Quality Assuarance</a></li>
+            <li><a href="project-management">Project Management</a></li>
+            <li><a href="data-analytics">Data Analytics</a></li>
+            <li><a href="organizational-change-management">Organizational Change Management</a></li>
+            <li><a href="business-analysis">Business Analysis</a></li>
+            <li><a href="staff-augmentation">Staff Augmentation</a></li>
+            <li><a href="managed-services">Managed Services</a></li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="col-md-6 col-lg-4 mb-md-0" >
+        <h2 class="footer-heading">Latest Blogs</h2>
+        <div class="block-21 mb-3 d-flex" *ngFor="let post of blogPost">
+          <a href="{{post.link}}" class="img mr-3 rounded">
+            <img *ngIf="post._embedded['wp:featuredmedia']" [src]="post._embedded['wp:featuredmedia'][0].source_url"
+            class="img-fluid" />
+          </a>
+          <div class="text">
+            <div class="meta">
+              <div class="clock-img"><a href="{{post.link}}"><span class="icon-calendar"></span><img class="img-fluid" src="assets/images/clock-svgrepo-com 1.png" alt="">{{ post.date | date: 'MMMM d, yyyy' }}</a></div>
+            </div>
+            <h3 class="heading"><a href="{{post.link}}">{{post.title.rendered}}</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 d-flex text-sm-left text-left align-items-center">
+          <span class="copy-right-text">© 2024. All rights reserved by Nikqik Technologies</span>
+        </div>
+        <div class="col-md-6 col-sm-6 footer-contact">
+              <div class="social-links terms-privacy d-flex justify-content-sm-end justify-content-center">
+                <!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> -->
+                <a href="https://www.linkedin.com/company/nikqiktechnologies/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/nikqik_technologies/" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
