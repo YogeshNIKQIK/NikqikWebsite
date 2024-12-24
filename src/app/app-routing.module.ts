@@ -18,7 +18,7 @@ import { AwsTechnologyServicesComponent } from './technologies/aws-technology-se
 import { PythonTechnologySolutionsComponent } from './technologies/python-technology-solutions/python-technology-solutions.component';
 import { ItServiceManagementProcessConsultingComponent } from './services/it-service-management-process-consulting/it-service-management-process-consulting.component';
 import { ItServiceManagementToolsImplementationComponent } from './services/it-service-management-tools-implementation/it-service-management-tools-implementation.component';
-import { CloudContactCenterProfessionalServicesComponent } from './services/cloud-contact-center-professional-services/cloud-contact-center-professional-services.component';
+import { CloudContactCenterProfessionalServicesComponent } from './services/cloud-consulting-professional-services/cloud-contact-center-professional-services.component';
 import { QualityAssuaranceComponent } from './services/quality-assuarance/quality-assuarance.component';
 import { ProjectManagementComponent } from './services/project-management/project-management.component';
 import { DataAnalyticsComponent } from './services/data-analytics/data-analytics.component';
