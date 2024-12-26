@@ -34,12 +34,18 @@ export class ContactUsComponent {
       } else {
         this.submitted = false;
         const formData = this.contactForm.value;
-        console.log(formData);
         formData['contctform'] = 1;
+        const data = JSON.stringify(formData);
+        let formBody = {
+          "body": data
+        }
+        // console.log(formBody);
+        
 
         axios
-          .post(`https://nikqik.manageprojects.in/api/contact.php`, formData)
+          .post(`https://8p78ugp5i0.execute-api.ap-southeast-2.amazonaws.com/dev`, formBody)
           .then(response => {
+            // console.log(response);
             this.toastr.success('Message Sent Successfully'); // Show success toast
             this.contactForm.reset();
           })
