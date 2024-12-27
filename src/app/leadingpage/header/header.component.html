@@ -49,6 +49,8 @@
                     (click)="closeMenu()">Quality Assuarance</a></li>
                 <li><a class="nav-link" routerLink="/project-management" routerLinkActive="active" id="link5"
                     (click)="closeMenu()">Project Management</a></li>
+                <li><a class="nav-link" routerLink="/web-app-development" routerLinkActive="active" id="link11"
+                    (click)="closeMenu()">Web & Custom Application Development</a></li>
               </div>
               <div class="col-lg-4 ul-padding bg-text">
                 <li><a class="nav-link" routerLink="/data-analytics" routerLinkActive="active" id="link6"
@@ -75,29 +77,36 @@
                 <div class="post-box" *ngIf="blogPost4 && blogPost4.length > 0">
                   <div class="post-img">
                     <img *ngIf="blogPost4[0]._embedded['wp:featuredmedia']"
-                         [src]="blogPost4[0]._embedded['wp:featuredmedia'][0].source_url"
-                         class="img-fluid" />
+                      [src]="blogPost4[0]._embedded['wp:featuredmedia'][0].source_url" class="img-fluid" />
                     <a href="{{blogPost4[0].link}}" class="readmore"><i class="fa fa-angle-right"></i></a>
                     <h3 class="post-title" [innerHTML]="blogPost4[0].title.rendered"></h3>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 ul-padding bg-text">
-                <li><a class="nav-link" routerLink="servicely-technology-solutions" routerLinkActive="active" (click)="closeMenu()">Servicely AI</a></li>
-                <li><a class="nav-link" routerLink="freshworks-technology-solutions" routerLinkActive="active" (click)="closeMenu()">Freshworks</a></li>
-                <li><a class="nav-link" routerLink="microsoft-technology-solutions" routerLinkActive="active" (click)="closeMenu()">Microsoft</a></li>
-                <li><a class="nav-link" routerLink="servicenow-technology-partner" routerLinkActive="active" (click)="closeMenu()">ServiceNow</a></li>
+                <li><a class="nav-link" routerLink="servicely-technology-solutions" routerLinkActive="active"
+                    (click)="closeMenu()">Servicely AI</a></li>
+                <li><a class="nav-link" routerLink="freshworks-technology-solutions" routerLinkActive="active"
+                    (click)="closeMenu()">Freshworks</a></li>
+                <li><a class="nav-link" routerLink="microsoft-technology-solutions" routerLinkActive="active"
+                    (click)="closeMenu()">Microsoft</a></li>
+                <li><a class="nav-link" routerLink="servicenow-technology-partner" routerLinkActive="active"
+                    (click)="closeMenu()">ServiceNow</a></li>
               </div>
               <div class="col-lg-4 ul-padding bg-text">
-                <li><a class="nav-link" routerLink="uipath-technology-solutions" routerLinkActive="active" (click)="closeMenu()">UiPath</a></li>
-                <li><a class="nav-link" routerLink="aws-technology-services" routerLinkActive="active" (click)="closeMenu()">AWS</a></li>
-                <li><a class="nav-link" routerLink="python-technology-solutions" routerLinkActive="active" (click)="closeMenu()">Python</a></li>
-                <li><a class="nav-link" routerLink="salesforce-technology-services" routerLinkActive="active" (click)="closeMenu()">Salesforce</a></li>
+                <li><a class="nav-link" routerLink="uipath-technology-solutions" routerLinkActive="active"
+                    (click)="closeMenu()">UiPath</a></li>
+                <li><a class="nav-link" routerLink="aws-technology-services" routerLinkActive="active"
+                    (click)="closeMenu()">AWS</a></li>
+                <li><a class="nav-link" routerLink="python-technology-solutions" routerLinkActive="active"
+                    (click)="closeMenu()">Python</a></li>
+                <li><a class="nav-link" routerLink="salesforce-technology-services" routerLinkActive="active"
+                    (click)="closeMenu()">Salesforce</a></li>
               </div>
             </div>
           </ul>
         </li>
-        
+
 
         <li class="nav-item">
           <a class="nav-link" routerLink="/product" routerLinkActive="active" (click)="closeMenu()"><span>Our

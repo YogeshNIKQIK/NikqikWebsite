@@ -26,6 +26,7 @@ import { OrganizationalChangeManagementComponent } from './services/organization
 import { BusinessAnalysisComponent } from './services/business-analysis/business-analysis.component';
 import { StaffAugmentationComponent } from './services/staff-augmentation/staff-augmentation.component';
 import { ManagedServicesComponent } from './services/managed-services/managed-services.component';
+import { WebAppDevelopmentComponent } from './services/web-app-development/web-app-development.component';
 import { ProductComponent } from './components/product/product.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 
@@ -56,6 +57,7 @@ const routes: Routes = [
   { path: 'business-analysis', component: BusinessAnalysisComponent },
   { path: 'staff-augmentation', component: StaffAugmentationComponent },
   { path: 'managed-services', component: ManagedServicesComponent },
+  { path: 'web-app-development', component: WebAppDevelopmentComponent },
   { path: 'product', component: ProductComponent },
   { path: 'reviews', component: ReviewsComponent },
 ];
