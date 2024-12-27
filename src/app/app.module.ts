@@ -39,6 +39,7 @@ import { OrganizationalChangeManagementComponent } from './services/organization
 import { BusinessAnalysisComponent } from './services/business-analysis/business-analysis.component';
 import { StaffAugmentationComponent } from './services/staff-augmentation/staff-augmentation.component';
 import { ManagedServicesComponent } from './services/managed-services/managed-services.component';
+import { WebAppDevelopmentComponent } from './services/web-app-development/web-app-development.component';
 import { ProductComponent } from './components/product/product.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 
@@ -74,6 +75,7 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     BusinessAnalysisComponent,
     StaffAugmentationComponent,
     ManagedServicesComponent,
+    WebAppDevelopmentComponent,
     ProductComponent,
     ReviewsComponent,
   ],
