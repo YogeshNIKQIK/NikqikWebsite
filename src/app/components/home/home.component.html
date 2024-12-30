@@ -343,10 +343,10 @@
           <form [formGroup]="enqueryForm" (ngSubmit)="onSubmit()" id="contact_form" class="pt-2">
             <div class="row">
               <div class="col-lg-6 col-sm-6 mb-3">
-                <input type="text" formControlName="fullname" [ngClass]="{'is-invalid':submitted && enqueryForm.controls['fullname'].errors && submitted}" class="form-input form-control w-100" aria-invalid="false" placeholder="*Full Name">
-                <div *ngIf="submitted && enqueryForm.controls['fullname'].errors" class="text-danger">
-                  <div *ngIf="submitted && enqueryForm.controls['fullname'].errors?.['required'] && submitted">Name is required</div>
-                  <div *ngIf="submitted && enqueryForm.controls['fullname'].errors?.['pattern'] " >Numbers are not allowed.</div>
+                <input type="text" formControlName="fname" [ngClass]="{'is-invalid':submitted && enqueryForm.controls['fname'].errors && submitted}" class="form-input form-control w-100" aria-invalid="false" placeholder="*Full Name">
+                <div *ngIf="submitted && enqueryForm.controls['fname'].errors" class="text-danger">
+                  <div *ngIf="submitted && enqueryForm.controls['fname'].errors?.['required'] && submitted">Name is required</div>
+                  <div *ngIf="submitted && enqueryForm.controls['fname'].errors?.['pattern'] " >Numbers are not allowed.</div>
                 </div>
 
               </div>
