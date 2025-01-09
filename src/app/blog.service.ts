@@ -5,7 +5,7 @@ import { HttpClient} from '@angular/common/http';
 })
 export class BlogService {
 
-  endpoint = 'https://nikqik.manageprojects.in/nikqikblog';
+  endpoint = 'https://nikqikblog.nikqik.com';
   constructor(private http: HttpClient) {}
   getPosts(){
       const url = `${this.endpoint}/wp-json/wp/v2/posts?_embed=true`
