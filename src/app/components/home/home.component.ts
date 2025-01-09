@@ -67,7 +67,7 @@ export class HomeComponent {
 
    slides = [
      { img: 'assets/images/forum_11876045.png', title: 'ITSM Process Consulting', description: 'Imagine your IT operations running smoothly, efficiently, and seamlessly aligned with your business goals.', link: 'services-detail#it-service-management-process-consulting' },
-     { img: 'assets/images/1641623.webp', title: 'ITSM Tools Consulting & Implementation', description: 'Streamlining Your Operations with Cutting-edge IT Service Management Tools', link: 'services-detail#it-service-management-tools-implementation' },
+     { img: 'assets/images/1641623.png', title: 'ITSM Tools Consulting & Implementation', description: 'Streamlining Your Operations with Cutting-edge IT Service Management Tools', link: 'services-detail#it-service-management-tools-implementation' },
      { img: 'assets/images/cloud_14217783.png', title: 'Cloud Consulting Professional Services', description: 'In today digital world, exceptional customer experience is the key to loyalty and growth.', link: 'services-detail#cloud-contact-center-professional-services' },
      { img: 'assets/images/high-quality_5733207.png', title: 'Quality Assurance', description: 'In today fast-paced world, delivering quality isnt just optional, its essential.', link: 'services-detail#quality-assuarance' },
      { img: 'assets/images/process_10740747.png', title: 'Project Management', description: 'Every successful project starts with a vision', link: 'services-detail#project-management' },
