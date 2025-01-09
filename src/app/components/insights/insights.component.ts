@@ -31,11 +31,10 @@ export class InsightsComponent implements OnInit{
         postsArray.sort((a, b) => b.date.getTime() - a.date.getTime());
 
         // Get only the first three blog posts
-        let blogPost = postsArray.slice(0,6);
+        let blogPost = postsArray.slice(0,3);
 
-        this.blogPost = blogPost.filter(item => item.tags.includes(5));
-
-        this.blogPost4 = blogPost.filter(item => item.tags.includes(4));
+        this.blogPost = blogPost.filter(item => item.tags.includes(4));
+        // this.blogPost4 = blogPost.filter(item => item.tags.includes(4));                     required for podcast which is commented for now on html file
 
       },
       error => {
