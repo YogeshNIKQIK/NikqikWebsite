@@ -1,127 +1,127 @@
 <nav class=" navbar navbar-expand-lg navbar-light" [ngClass]="{'navbar-light' : true, 'fixed-top' : isSticky}">
-  <div class="container">
-    <div class="logo">
-      <a href="/">
-        <img src="assets/images/nikqik-black-logo.svg" alt="" class="img-fluid img-white ">
-        <img src="assets/images/nikqik-black-logo.svg" alt="" class="img-fluid img-black">
-      </a>
-
-    </div>
-    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
-      <span *ngIf="!showCross" class="navbar-toggler-icon"></span>
-      <span *ngIf="showCross">&times;</span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about-us" routerLinkActive="active" (click)="closeMenu()"><span>About
-              Us</span></a>
-        </li>
-
-        <li class="nav-item dropdown position-static"><a href="javascript:void(0)" class="nav-link"
-            (mouseenter)="showMenu()">Services</a>
-          <ul class="w-100 Services-div">
-            <div class="row">
-              <div class="col-lg-4 mobile-hide" *ngFor="let post of blogPost">
-                <div class="post-box" *ngIf="post.tags=='5'">
-                  <div class="post-img">
-                    <img *ngIf="post._embedded['wp:featuredmedia']"
-                      [src]="post._embedded['wp:featuredmedia'][0].source_url" class="img-fluid" />
-                    <a href="{{post.link}}" class="readmore" (click)="closeMenu()"><i class="fa fa-angle-right"></i></a>
-                    <h3 class="post-title" [innerHTML]="post.title.rendered "></h3>
-                  </div>
-
-
-                </div>
-              </div>
-
-              <div class="col-lg-4 ul-padding bg-text">
-                <li><a class="nav-link" routerLink="/it-service-management-process-consulting" id="link1"
-                    routerLinkActive="active" (click)="closeMenu()">ITSM Process
-                    Consulting</a></li>
-                <li><a class="nav-link" routerLink="/it-service-management-tools-implementation" id="link2"
-                    routerLinkActive="active" (click)="closeMenu()">ITSM Tools Consulting &
-                    Implementation</a></li>
-                <li><a class="nav-link" routerLink="/cloud-contact-center-professional-services" id="link3"
-                    routerLinkActive="active" (click)="closeMenu()">Cloud Consulting
-                    Professional Services</a></li>
-                <li><a class="nav-link" routerLink="/quality-assuarance" routerLinkActive="active" id="link4"
-                    (click)="closeMenu()">Quality Assuarance</a></li>
-                <li><a class="nav-link" routerLink="/project-management" routerLinkActive="active" id="link5"
-                    (click)="closeMenu()">Project Management</a></li>
-                <li><a class="nav-link" routerLink="/web-app-development" routerLinkActive="active" id="link11"
-                    (click)="closeMenu()">Web & Custom Application Development</a></li>
-              </div>
-              <div class="col-lg-4 ul-padding bg-text">
-                <li><a class="nav-link" routerLink="/data-analytics" routerLinkActive="active" id="link6"
-                    (click)="closeMenu()">Data Analytics</a></li>
-                <li><a class="nav-link" routerLink="/organizational-change-management" id="link7"
-                    routerLinkActive="active" (click)="closeMenu()">Organizational Change Management</a>
-                </li>
-                <li><a class="nav-link" routerLink="business-analysis" routerLinkActive="active" id="link8"
-                    (click)="closeMenu()">Business Analysis</a></li>
-                <li><a class="nav-link" routerLink="staff-augmentation" routerLinkActive="active" id="link9"
-                    (click)="closeMenu()">Staff Augmentation</a></li>
-                <li><a class="nav-link" routerLink="managed-services" routerLinkActive="active" id="link10"
-                    (click)="closeMenu()">Managed Services</a></li>
-              </div>
-            </div>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown position-static">
-          <a href="javascript:void(0)" class="nav-link" (mouseenter)="showMenu()">Technologies</a>
-          <ul class="w-100 Services-div">
-            <div class="row">
-              <div class="col-lg-4 mobile-hide">
-                <div class="post-box" *ngIf="blogPost4 && blogPost4.length > 0">
-                  <div class="post-img">
-                    <img *ngIf="blogPost4[0]._embedded['wp:featuredmedia']"
-                      [src]="blogPost4[0]._embedded['wp:featuredmedia'][0].source_url" class="img-fluid" />
-                    <a href="{{blogPost4[0].link}}" class="readmore"><i class="fa fa-angle-right"></i></a>
-                    <h3 class="post-title" [innerHTML]="blogPost4[0].title.rendered"></h3>
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/images/nikqik-black-logo.svg" alt="" class="img-fluid img-white ">
+          <img src="assets/images/nikqik-black-logo.svg" alt="" class="img-fluid img-black">
+        </a>
+  
+      </div>
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+        <span *ngIf="!showCross" class="navbar-toggler-icon"></span>
+        <span *ngIf="showCross">&times;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about-us" routerLinkActive="active" (click)="closeMenu()"><span>About
+                Us</span></a>
+          </li>
+  
+          <li class="nav-item dropdown position-static"><a href="javascript:void(0)" class="nav-link"
+              (mouseenter)="showMenu()">Services</a>
+            <ul class="w-100 Services-div">
+              <div class="row">
+                <div class="col-lg-4 mobile-hide" *ngFor="let post of blogPost">
+                  <div class="post-box" *ngIf="post.tags=='5'">
+                    <div class="post-img">
+                      <img *ngIf="post._embedded['wp:featuredmedia']"
+                        [src]="post._embedded['wp:featuredmedia'][0].source_url" class="img-fluid" />
+                      <a href="{{post.link}}" class="readmore" (click)="closeMenu()"><i class="fa fa-angle-right"></i></a>
+                      <h3 class="post-title" [innerHTML]="post.title.rendered "></h3>
+                    </div>
+  
+  
                   </div>
                 </div>
+  
+                <div class="col-lg-4 ul-padding bg-text">
+                  <li><a class="nav-link" routerLink="/it-service-management-process-consulting" id="link1"
+                      routerLinkActive="active" (click)="closeMenu()">ITSM Process
+                      Consulting</a></li>
+                  <li><a class="nav-link" routerLink="/it-service-management-tools-implementation" id="link2"
+                      routerLinkActive="active" (click)="closeMenu()">ITSM Tools Consulting &
+                      Implementation</a></li>
+                  <li><a class="nav-link" routerLink="/cloud-contact-center-professional-services" id="link3"
+                      routerLinkActive="active" (click)="closeMenu()">Cloud Consulting
+                      Professional Services</a></li>
+                  <li><a class="nav-link" routerLink="/quality-assuarance" routerLinkActive="active" id="link4"
+                      (click)="closeMenu()">Quality Assuarance</a></li>
+                  <li><a class="nav-link" routerLink="/project-management" routerLinkActive="active" id="link5"
+                      (click)="closeMenu()">Project Management</a></li>
+                  <li><a class="nav-link" routerLink="/web-app-development" routerLinkActive="active" id="link11"
+                      (click)="closeMenu()">Web & Custom Application Development</a></li>
+                </div>
+                <div class="col-lg-4 ul-padding bg-text">
+                  <li><a class="nav-link" routerLink="/data-analytics" routerLinkActive="active" id="link6"
+                      (click)="closeMenu()">Data Analytics</a></li>
+                  <li><a class="nav-link" routerLink="/organizational-change-management" id="link7"
+                      routerLinkActive="active" (click)="closeMenu()">Organizational Change Management</a>
+                  </li>
+                  <li><a class="nav-link" routerLink="business-analysis" routerLinkActive="active" id="link8"
+                      (click)="closeMenu()">Business Analysis</a></li>
+                  <li><a class="nav-link" routerLink="staff-augmentation" routerLinkActive="active" id="link9"
+                      (click)="closeMenu()">Staff Augmentation</a></li>
+                  <li><a class="nav-link" routerLink="managed-services" routerLinkActive="active" id="link10"
+                      (click)="closeMenu()">Managed Services</a></li>
+                </div>
               </div>
-              <div class="col-lg-4 ul-padding bg-text">
-                <li><a class="nav-link" routerLink="servicely-technology-solutions" routerLinkActive="active"
-                    (click)="closeMenu()">Servicely AI</a></li>
-                <li><a class="nav-link" routerLink="freshworks-technology-solutions" routerLinkActive="active"
-                    (click)="closeMenu()">Freshworks</a></li>
-                <li><a class="nav-link" routerLink="microsoft-technology-solutions" routerLinkActive="active"
-                    (click)="closeMenu()">Microsoft</a></li>
-                <li><a class="nav-link" routerLink="servicenow-technology-partner" routerLinkActive="active"
-                    (click)="closeMenu()">ServiceNow</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown position-static">
+            <a href="javascript:void(0)" class="nav-link" (mouseenter)="showMenu()">Technologies</a>
+            <ul class="w-100 Services-div">
+              <div class="row">
+                <div class="col-lg-4 mobile-hide">
+                  <div class="post-box" *ngIf="blogPost4 && blogPost4.length > 0">
+                    <div class="post-img">
+                      <img *ngIf="blogPost4[0]._embedded['wp:featuredmedia']"
+                        [src]="blogPost4[0]._embedded['wp:featuredmedia'][0].source_url" class="img-fluid" />
+                      <a href="{{blogPost4[0].link}}" class="readmore"><i class="fa fa-angle-right"></i></a>
+                      <h3 class="post-title" [innerHTML]="blogPost4[0].title.rendered"></h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 ul-padding bg-text">
+                  <li><a class="nav-link" routerLink="servicely-technology-solutions" routerLinkActive="active"
+                      (click)="closeMenu()">Servicely AI</a></li>
+                  <li><a class="nav-link" routerLink="freshworks-technology-solutions" routerLinkActive="active"
+                      (click)="closeMenu()">Freshworks</a></li>
+                  <li><a class="nav-link" routerLink="microsoft-technology-solutions" routerLinkActive="active"
+                      (click)="closeMenu()">Microsoft</a></li>
+                  <li><a class="nav-link" routerLink="servicenow-technology-partner" routerLinkActive="active"
+                      (click)="closeMenu()">ServiceNow</a></li>
+                </div>
+                <div class="col-lg-4 ul-padding bg-text">
+                  <li><a class="nav-link" routerLink="uipath-technology-solutions" routerLinkActive="active"
+                      (click)="closeMenu()">UiPath</a></li>
+                  <li><a class="nav-link" routerLink="aws-technology-services" routerLinkActive="active"
+                      (click)="closeMenu()">AWS</a></li>
+                  <li><a class="nav-link" routerLink="python-technology-solutions" routerLinkActive="active"
+                      (click)="closeMenu()">Python</a></li>
+                  <li><a class="nav-link" routerLink="salesforce-technology-services" routerLinkActive="active"
+                      (click)="closeMenu()">Salesforce</a></li>
+                </div>
               </div>
-              <div class="col-lg-4 ul-padding bg-text">
-                <li><a class="nav-link" routerLink="uipath-technology-solutions" routerLinkActive="active"
-                    (click)="closeMenu()">UiPath</a></li>
-                <li><a class="nav-link" routerLink="aws-technology-services" routerLinkActive="active"
-                    (click)="closeMenu()">AWS</a></li>
-                <li><a class="nav-link" routerLink="python-technology-solutions" routerLinkActive="active"
-                    (click)="closeMenu()">Python</a></li>
-                <li><a class="nav-link" routerLink="salesforce-technology-services" routerLinkActive="active"
-                    (click)="closeMenu()">Salesforce</a></li>
-              </div>
-            </div>
-          </ul>
-        </li>
-
-
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/product" routerLinkActive="active" (click)="closeMenu()"><span>Our
-              Product</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/insights" routerLinkActive="active" (click)="closeMenu()">Insights</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" routerLink="/careers" routerLinkActive="active" (click)="closeMenu()">Careers</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="getstarted " routerLink="/contact-us" routerLinkActive="active" (click)="closeMenu()">Contact Us</a>
-        </li>
-      </ul>
+            </ul>
+          </li>
+  
+  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product" routerLinkActive="active" (click)="closeMenu()"><span>Our
+                Product</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/insights" routerLinkActive="active" (click)="closeMenu()">Insights</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="/careers" routerLinkActive="active" (click)="closeMenu()">Careers</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="getstarted " routerLink="/contact-us" routerLinkActive="active" (click)="closeMenu()">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
