@@ -22,18 +22,19 @@
               (mouseenter)="showMenu()">Services</a>
             <ul class="w-100 Services-div">
               <div class="row">
-                <div class="col-lg-4 mobile-hide" *ngFor="let post of blogPost">
-                  <div class="post-box" *ngIf="post.tags=='5'">
+                <div class="col-lg-4 mobile-hide" *ngIf="blogPost && blogPost.length > 0">
+                  <div class="post-box">
                     <div class="post-img">
-                      <img *ngIf="post._embedded['wp:featuredmedia']"
-                        [src]="post._embedded['wp:featuredmedia'][0].source_url" class="img-fluid" />
-                      <a href="{{post.link}}" class="readmore" (click)="closeMenu()"><i class="fa fa-angle-right"></i></a>
-                      <h3 class="post-title" [innerHTML]="post.title.rendered "></h3>
+                      <img *ngIf="blogPost[0]._embedded['wp:featuredmedia']"
+                           [src]="blogPost[0]._embedded['wp:featuredmedia'][0].source_url" 
+                           class="img-fluid" />
+                      <a [href]="blogPost[0].link" class="readmore" (click)="closeMenu()">
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                      <h3 class="post-title" [innerHTML]="blogPost[0].title.rendered"></h3>
                     </div>
-  
-  
                   </div>
-                </div>
+                </div>    
   
                 <div class="col-lg-4 ul-padding bg-text">
                   <li><a class="nav-link" routerLink="/it-service-management-process-consulting" id="link1"
@@ -73,16 +74,19 @@
             <a href="javascript:void(0)" class="nav-link" (mouseenter)="showMenu()">Technologies</a>
             <ul class="w-100 Services-div">
               <div class="row">
-                <div class="col-lg-4 mobile-hide">
-                  <div class="post-box" *ngIf="blogPost4 && blogPost4.length > 0">
+                <div class="col-lg-4 mobile-hide" *ngIf="blogPost4 && blogPost4.length > 0">
+                  <div class="post-box">
                     <div class="post-img">
                       <img *ngIf="blogPost4[0]._embedded['wp:featuredmedia']"
-                        [src]="blogPost4[0]._embedded['wp:featuredmedia'][0].source_url" class="img-fluid" />
-                      <a href="{{blogPost4[0].link}}" class="readmore"><i class="fa fa-angle-right"></i></a>
+                           [src]="blogPost4[0]._embedded['wp:featuredmedia'][0].source_url" 
+                           class="img-fluid" />
+                      <a [href]="blogPost4[0].link" class="readmore" (click)="closeMenu()">
+                        <i class="fa fa-angle-right"></i>
+                      </a>
                       <h3 class="post-title" [innerHTML]="blogPost4[0].title.rendered"></h3>
                     </div>
                   </div>
-                </div>
+                </div>                
                 <div class="col-lg-4 ul-padding bg-text">
                   <li><a class="nav-link" routerLink="servicely-technology-solutions" routerLinkActive="active"
                       (click)="closeMenu()">Servicely AI</a></li>

@@ -1,4 +1,4 @@
-import { Component,HostListener, Renderer2 } from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 import { BlogService } from 'src/app/blog.service';
 
@@ -10,18 +10,18 @@ import { BlogService } from 'src/app/blog.service';
 export class HeaderComponent {
   blogPost: any
   blogPost4: any
-  blogCategories:any
+  blogCategories: any
   page = null;
   isSticky: boolean = false;
   showCross: boolean = false;
-  style : any;
+  style: any;
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.isSticky = window.pageYOffset >= 50;
   }
-  logoData: any =[]
-  constructor(public router: Router, private blogservice:BlogService,private renderer: Renderer2) { }
+  logoData: any = []
+  constructor(public router: Router, private blogservice: BlogService, private renderer: Renderer2) { }
 
   toggleMenu() {
     this.showCross = !this.showCross;
@@ -49,7 +49,7 @@ export class HeaderComponent {
     }
   }
 
-  showMenu(){
+  showMenu() {
     this.showCross = true;
     const elements = document.getElementsByClassName('Services-div');
     for (let i = 0; i < elements.length; i++) {
@@ -65,42 +65,42 @@ export class HeaderComponent {
 
   getPosts() {
     this.blogservice.getPosts().subscribe(
-      (data: {[key: string]: any}) => { // Assuming blog posts are stored in an object
-        const postsArray = Object.values(data); // Convert object values to array
-
+      (data: { [key: string]: any }) => {
+        const postsArray = Object.values(data);
+  
         // Convert string dates to Date objects
         postsArray.forEach(post => post.date = new Date(post.date));
-
-        // Sort the posts by date in descending order
+  
+        // Sort by date in descending order
         postsArray.sort((a, b) => b.date.getTime() - a.date.getTime());
-
-        // Get only the first three blog posts
-        let blogPost = postsArray.slice(0,1);
-        let blogPost4 = postsArray.slice(0,4);
-
-        this.blogPost = blogPost.filter(item => item.tags.includes(5));
-
-        this.blogPost4 = blogPost4.filter(item => item.tags.includes(4));
-
+  
+        // Filter for category ID 13 (for Services) and 9 (for Technologies)
+        const blogPost = postsArray.filter(item => item.categories.includes(13));
+        const blogPost4 = postsArray.filter(item => item.categories.includes(9));
+  
+        // Take only the latest post for each section
+        this.blogPost = blogPost.slice(0, 1);   // Latest post for Services
+        this.blogPost4 = blogPost4.slice(0, 1); // Latest post for Technologies
       },
       error => {
         console.error("Error fetching blog posts:", error);
       }
-  )
-   }
+    );
+  }
+  
 
-   getcategories(){
+  getcategories() {
     this.blogservice.getcategories().subscribe(
       data => {
         this.blogCategories = data;
-    }
-  )
-   }
+      }
+    )
+  }
 
   firstFieldValue: string = '';
   secondFieldValue: string = '';
   showSecondField: boolean = false;
-  Event:string='';
+  Event: string = '';
 
   showNextField() {
     this.showSecondField = this.firstFieldValue.trim() !== '';
