@@ -11,19 +11,19 @@ export class AboutUsComponent {
   displayStyleModel2: string = 'none'; // Initial display style for model 2
 
   openPopup(model: number) {
-    if (model === 1) {
-      this.displayStyleModel1 = 'block'; // Display model 1
-    } else if (model === 2) {
-      this.displayStyleModel2 = 'block'; // Display model 2
-    }
+    // if (model === 1) {
+    //   this.displayStyleModel1 = 'block'; // Display model 1
+    // } else if (model === 2) {
+    //   this.displayStyleModel2 = 'block'; // Display model 2
+    // }
   }
 
   closePopup(model: number) {
-    if (model === 1) {
-      this.displayStyleModel1 = 'none'; // Hide model 1
-    } else if (model === 2) {
-      this.displayStyleModel2 = 'none'; // Hide model 2
-    }
+    // if (model === 1) {
+    //   this.displayStyleModel1 = 'none'; // Hide model 1
+    // } else if (model === 2) {
+    //   this.displayStyleModel2 = 'none'; // Hide model 2
+    // }
   }
 
 }
