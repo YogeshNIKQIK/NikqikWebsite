@@ -13,7 +13,7 @@ import { FreshworksTechnologySolutionsComponent } from './technologies/freshwork
 import { MicrosoftTechnologySolutionsComponent } from './technologies/microsoft-technology-solutions/microsoft-technology-solutions.component';
 import { ServicenowTechnologyPartnerComponent } from './technologies/servicenow-technology-partner/servicenow-technology-partner.component';
 import { SalesforceTechnologyServicesComponent } from './technologies/salesforce-technology-services/salesforce-technology-services.component';
-import { UipathTechnologySolutionsComponent } from './technologies/uipath-technology-solutions/uipath-technology-solutions.component';
+import { SolarwindTechnologySolutionsComponent } from './technologies/solarwind-technology-solutions/solarwind-technology-solutions.component';
 import { AwsTechnologyServicesComponent } from './technologies/aws-technology-services/aws-technology-services.component';
 import { PythonTechnologySolutionsComponent } from './technologies/python-technology-solutions/python-technology-solutions.component';
 import { ItServiceManagementProcessConsultingComponent } from './services/it-service-management-process-consulting/it-service-management-process-consulting.component';
@@ -44,7 +44,7 @@ const routes: Routes = [
   { path: 'microsoft-technology-solutions', component: MicrosoftTechnologySolutionsComponent },
   { path: 'servicenow-technology-partner', component: ServicenowTechnologyPartnerComponent },
   { path: 'salesforce-technology-services', component: SalesforceTechnologyServicesComponent },
-  { path: 'uipath-technology-solutions', component: UipathTechnologySolutionsComponent },
+  { path: 'solarwind-technology-solutions', component: SolarwindTechnologySolutionsComponent },
   { path: 'aws-technology-services', component: AwsTechnologyServicesComponent },
   { path: 'python-technology-solutions', component: PythonTechnologySolutionsComponent },
   { path: 'it-service-management-process-consulting', component: ItServiceManagementProcessConsultingComponent },
