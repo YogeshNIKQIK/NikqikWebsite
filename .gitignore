@@ -5,3 +5,6 @@ dist/
 .idea/
 *.log
 *.tmp
+
+# local env files
+package-lock.json
